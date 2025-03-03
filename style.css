@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: #d4e0ec;
+    background-color: #f5f4f0e0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #b1c9e0;
+    background-color: rgb(226, 235, 223);
 }
 
 .header-font {
@@ -39,6 +39,13 @@ header h1 {
 
 header h2 {
     text-align: center;
+    font-weight: bold;
+}
+
+header span {
+    color: olivedrab;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 header p {
@@ -49,6 +56,7 @@ header p {
 header .check-box {
     border: 5px 20px;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 header div a {
@@ -73,7 +81,7 @@ header div a:hover {
 
 /* nav section */
 nav {
-    background-color: #2a3a53;
+    background-color: #1e8585;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -175,29 +183,32 @@ li a:hover {
 
 .home-section h1 {
     width: 100%;
+    padding: 10px 10px;
     text-align: center;
-    margin: 0 auto;
-    color: #473b03;
+    margin-top: 50px;
+    color: rgb(5, 122, 131);
     font-size: 40px;
     font-weight: bold;
 
 }
 
 .home-section h1 span {
-    color: #86712b;
+    color: olivedrab;
+    font-weight: bolder;
     font-style: italic;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 .home-section .home-image img {
     width: 100%;
     margin-top: 70px;
+    border-radius: 30px;
 }
 
 .home-slide a {
     border-radius: 8px;
     color: #fff;
-    margin: 10px 200px;
+    margin: 0 90px;
     text-decoration: none;
     cursor: pointer;
     justify-content: center;
@@ -212,17 +223,17 @@ li a:hover {
 
 .new-books h1 {
     font-size: 50px;
+    font-weight: bold;
     color: #033941;
     text-align: center;
     margin: auto;
-    padding: 10px 10px;
 }
 
 .new-books p {
     font-size: 20px;
-    color: #033941;
+    color: #75740d;
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .new_books {
@@ -336,9 +347,6 @@ li a:hover {
 
 }
 
-
-
-
 /* book section */
 .card-book {
     width: 100%;
@@ -355,7 +363,7 @@ li a:hover {
     font-size: 50px;
     font-family: "Playfair Display SC", serif;
     position: relative;
-    bottom: 20px;
+    margin-top: 50px;
 }
 
 .card-book .card {
@@ -589,7 +597,7 @@ h1 {
     font-size: 50px;
     position: relative;
     bottom: 20px;
-    color: #caa811;
+    color: #274749;
 }
 
 .about .about_tag p {
@@ -602,6 +610,7 @@ h1 {
 
 .about .about_tag .about_btn {
     padding: 10px 20px;
+    margin: 0 auto;
     background: #033941;
     color: #fff;
     text-decoration: none;
@@ -639,12 +648,11 @@ h1 {
 /* contact section */
 
 .form h1 {
-    margin: 30px 0px 20px 0px;
+    margin-top: 50px;
     text-align: center;
     color: #cf1ec6;
     font-weight: bold;
     font-size: 40px;
-    padding-top: 20px;
 }
 
 .form h1 span {
@@ -717,19 +725,16 @@ h1 {
 
 .box-area {
     width: 650px;
-    margin: 50px auto;
-    padding: 10px 0;
+    margin-top: 50px;
 }
 
 .left-box {
-    padding: 20px 1px 20px 20px;
     font-weight: bold;
     font-style: italic;
     background-image: url(images/login.jpg);
 }
 
 .right-box {
-    padding: 20px 1px 20px 20px;
     font-weight: bold;
     font-style: italic;
     color: #443da7;
@@ -773,7 +778,7 @@ h1 {
 
 .banner .banner_tag h1 {
     font-size: 50px;
-    position: 50%;
+    position: relative;
     bottom: 20px;
     font-style: italic;
     color: #033941;
@@ -786,13 +791,15 @@ h1 {
     line-height: 22px;
     width: 550px;
     text-align: justify;
+    padding: 20px 20px;
     margin-bottom: 15px;
     color: #193553;
     left: 25px;
 }
 
 .banner .banner_btn {
-    padding: 8px 20px;
+    margin: 0 30px;
+    padding: 10px 20px;
     background: #033941;
     text-decoration: none;
     border-radius: 10px;
@@ -805,8 +812,8 @@ h1 {
 /* Footer Section */
 footer {
     width: 100%;
-    padding: 20px 20px;
-    background-color: #a9c8ec;
+    height: auto;
+    background-color: #cccaca;
 }
 
 footer .footer_main {
@@ -829,12 +836,11 @@ footer .footer_main .tag p {
     width: 250px;
     line-height: 22px;
     text-align: justify;
-    margin-bottom: 20px;
 }
 
 footer .footer_main .tag h1 {
     font-size: 25px;
-    margin: 25px 0;
+    margin: 15px 0;
     color: #000;
 }
 
@@ -859,7 +865,7 @@ footer .footer_main .tag .search_bar {
     width: 230px;
     height: 30px;
     background: rgba(202, 202, 202);
-    border-radius: 25px;
+    border-radius: 35px;
 }
 
 footer .footer_main .tag .search_bar input {
@@ -877,7 +883,7 @@ footer .footer_main .tag .search_bar input {
 
 footer .footer_main .tag .search_bar button {
     padding: 7px 15px;
-    background: #990202c4;
+    background: #033941;
     border: none;
     margin-top: 15px;
     border-radius: 10px;
@@ -891,12 +897,12 @@ footer .end {
     justify-content: center;
     font-weight: bold;
     font-style: italic;
-    padding: 15px;
-    color: #4d1b12;
+    color: #033941;
 }
 
 footer .end span {
-    color: #000;
+    color: #fff;
+    font-size: medium;
     margin-left: 10px;
     margin-bottom: 10px;
 }

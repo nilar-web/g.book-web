@@ -33,184 +33,186 @@
 
         <!-- style.css -->
         <style class="text/css">
-            /* sign up */
-.wrapper {
-    background: #ececec;
-    padding: 0 20px 0 20px;
-}
+        /* sign up */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .wrapper {
+            background: #ececec;
+            padding: 0 20px 0 20px;
+        }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+        .main {            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .row {
+            width: 900px;
+            height: 550px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+            display: flex;}
 
-.row {
-    width: 900px;
-    height: 550px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
-}
+        .slide-image {
+            background-image: url("images/login.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 10px 0 0 10px;
+        }
+        img {       
+            width: 35px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
 
-.slide-image {
-    background-image: url("images/login.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    border-radius: 10px 0 0 10px;
-}
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
 
-img {
-    width: 35px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
+        .text p {
+            color: #fff;
+            font-size: 18px;
+        }
 
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
+        i {
+            font-weight: 400;
+            font-size: 15px;
+        }
 
-.text p {
-    color: #fff;
-    font-size: 18px;
-}
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
 
-i {
-    font-weight: 400;
-    font-size: 15px;
-}
+        .input-box {
+            width: 330px;
+            box-sizing: border-box;
+        }
 
-.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+        .input-box header {
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 45px;
+        }
 
-.input-box {
-    width: 330px;
-    box-sizing: border-box;
-}
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 0 10px 0 10px;
+        }
+                            
+        .input {
+            height: 45px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            outline: none;
+            margin-bottom: 20px;
+            color: #40414a;
+        }
 
-.input-box header {
-    color: #000;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 45px;
-}
+        .input-box .input-field label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            pointer-events: none;
+            transition: .5s;
+        }
 
-.input-field {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 0 10px 0 10px;
-}
+        .input-box .input:focus~label {
+            top: -10px;
+            font-size: 13px;
+        }
 
-.input {
-    height: 45px;
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    outline: none;
-    margin-bottom: 20px;
-    color: #40414a;
-}
+        .input-field .input:valid~label {       
+            top: -10px;
+            font-size: 13px;
+            color: #5d5076;
+        }
 
-.input-box .input-field label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    pointer-events: none;
-    transition: .5s;
-}
+        .input-box .input:focus,
+        .input-field .input:valid {
+            border-bottom: 1px solid #743ae1;
+        }
 
-.input-box .input:focus~label {
-    top: -10px;
-    font-size: 13px;
-}
+        .submit {
+            border: none;
+            outline: none;
+            height: 45px;
+            background: #ececec;
+            border-radius: 5px;
+            transition: .4s;
+        }
 
-.input-field .input:valid~label {
-    top: -10px;
-    font-size: 13px;
-    color: #5d5076;
-}
+        .submit:hover {
+            background: rgba(37, 95, 156, 0.1);
+            color: #fff;
+        }
 
-.input-box .input:focus,
-.input-field .input:valid {
-    border-bottom: 1px solid #743ae1;
-}
+        .signin {       
+            text-align: center;
+            font-size: small;
+            margin-top: 25px;
+        }
 
-.submit {
-    border: none;
-    outline: none;
-    height: 45px;
-    background: #ececec;
-    border-radius: 5px;
-    transition: .4s;
-}
+        .span a {
+            text-decoration: none;
+            font-weight: 700;
+            color: #000;
+            transition: .5s;
+        }
 
-.submit:hover {
-    background: rgba(37, 95, 156, 0.1);
-    color: #fff;
-}
+        .span a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
 
-.signin {
-    text-align: center;
-    font-size: small;
-    margin-top: 25px;
-}
+        @media only screen and (max-width:768px) {
+            .slide-image {
+                border-radius: 10px 10px 0 0;
+            }
 
-.span a {
-    text-decoration: none;
-    font-weight: 700;
-    color: #000;
-    transition: .5s;
-}
+            img {                
+                width: 35px;
+                position: absolute;
+                top: 20px;
+                left: 47%;
+            }
 
-.span a:hover {
-    text-decoration: underline;
-    color: #000;
-}
+            .text {     
+                position: absolute;
+                top: 70%;
+                text-align: center;
+            }
 
-@media only screen and (max-width:768px) {
-    .slide-image {
-        border-radius: 10px 10px 0 0;
-    }
+            .text p,
+            i {
+                font-size: 17px;
+            }
 
-    img {
-        width: 35px;
-        position: absolute;
-        top: 20px;
-        left: 47%;
-    }
-
-    .text {
-        position: absolute;
-        top: 70%;
-        text-align: center;
-    }
-
-    .text p,
-    i {
-        font-size: 17px;
-    }
-
-    .row {
-        max-width: 420px;
-        width: 100%;
-    }
-}
-         </style>
-
+            .row {
+                max-width: 420px;
+                width: 100%;
+            }
+        }
+</style>
     </head>
-
     <body>
 
         <div class="wrapper">
@@ -257,6 +259,7 @@ i {
                 </div>
             </div>
         </div>
+
         <!-- font awesome cdn js -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
