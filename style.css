@@ -675,7 +675,7 @@ h1 {
 .form input,
 .form textarea :hover {
     background: transparent;
-    border: 2px solid;
+    border: 2px;
     color: #bbb2b2;
 }
 
@@ -778,7 +778,7 @@ h1 {
 
 .banner .banner_tag h1 {
     font-size: 50px;
-    position: relative;
+    position: 50%;
     bottom: 20px;
     font-style: italic;
     color: #033941;
@@ -791,15 +791,13 @@ h1 {
     line-height: 22px;
     width: 550px;
     text-align: justify;
-    padding: 20px 20px;
     margin-bottom: 15px;
     color: #193553;
     left: 25px;
 }
 
 .banner .banner_btn {
-    margin: 0 30px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     background: #033941;
     text-decoration: none;
     border-radius: 10px;
